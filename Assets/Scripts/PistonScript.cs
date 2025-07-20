@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PistonScript : MonoBehaviour
 {
+    [SerializeField] float springForce = 150.0f;
     [SerializeField] float pullForce;
     bool _isPulling;
     Rigidbody _rb;
@@ -27,7 +28,7 @@ public class PistonScript : MonoBehaviour
         }
         else
         {
-            this._spring.spring = 100;
+            this._spring.spring = springForce;
         }
     }
 }
