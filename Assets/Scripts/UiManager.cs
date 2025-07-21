@@ -1,16 +1,28 @@
+using TMPro;
 using UnityEngine;
 
 public class UiManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private TMP_Text scoreText;
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    void OnEnable()
     {
-        
+        gameManager.OnScoreChanged += UpdateScore;
     }
+
+    void OnDisable()
+    {
+        gameManager.OnScoreChanged -= UpdateScore;
+    }
+
+    private void UpdateScore(int score)
+    {
+        this.scoreText.SetText("Score:\n" + score);
+    }
+    
 }

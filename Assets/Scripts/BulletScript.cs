@@ -7,8 +7,6 @@ public class BulletScript : MonoBehaviour
     [SerializeField] float minX = -100f;
     void Start()
     {
-        Debug.Log($"Y: {transform.position.y}, minY: {minY}");
-        Debug.Log($"X: {transform.position.x}, maxX: {maxX}, minX: {minX}");
     }
     
     void Update()
