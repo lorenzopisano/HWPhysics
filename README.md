@@ -1,5 +1,8 @@
 # Simple Plinko Game
 
+## Disclaimer:
+This is a university assignment, not a full-fledged game! It’s mostly for learning and experimenting
+
 ## About The Project
 
 This is a very simplified version of the classic Plinko game, created in Unity. The objective of the game is to score points by dropping spheres down a pegged board and having them land in the highest-scoring slots at the bottom.
