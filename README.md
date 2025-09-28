@@ -1,6 +1,6 @@
 # Simple Plinko Game
 
-## Disclaimer:
+**Disclaimer:**  
 This is a university assignment, not a full-fledged game! It’s mostly for learning and experimenting
 
 ## About The Project
